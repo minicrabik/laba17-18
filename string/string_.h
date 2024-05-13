@@ -39,12 +39,14 @@ char* copyIf(char *beginSource, const char *endSource, char *beginDestination, i
 
 char* copyIfReverse(char *rbeginSource, const char *rendSource, char *beginDestination, int (*f)(int));
 
-char* getEndOfString(char* s)
+char* getEndOfString(char* s);
 
 void assert_string(const char* expected, char* got,
                    char const* file_name, char const* func_name,
                    int line);
 
 int getWord(char *beginSearch, WordDescriptor *word);
+
+void freeString(char* string);
 
 #endif //LABA17_STRING__H
