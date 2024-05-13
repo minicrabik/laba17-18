@@ -17,6 +17,14 @@ typedef struct WordDescriptor {
     char* end;
 } WordDescriptor;
 
+typedef struct BagOfWords {
+    WordDescriptor words[MAX_N_WORDS_IN_STRING];
+    size_t size;
+} BagOfWords;
+
+extern BagOfWords _bag;
+extern BagOfWords _bag2;
+
 extern char _string_buffer[MAX_STRING_SIZE + 1];
 
 size_t strlen_(const char *begin);
@@ -48,5 +56,7 @@ void assert_string(const char* expected, char* got,
 int getWord(char *beginSearch, WordDescriptor *word);
 
 void freeString(char* string);
+
+void free_bag(BagOfWords* bag);
 
 #endif //LABA17_STRING__H

@@ -2,6 +2,9 @@
 #include <ctype.h>
 #include "string_.h"
 
+BagOfWords _bag = {.words = NULL, .size = 0};
+BagOfWords _bag2 = {.words = NULL, .size = 0};
+
 size_t strlen_(const char *begin) {
     char *end = begin;
     while (*end != '\0')
@@ -122,4 +125,13 @@ void freeString(char* string) {
         *ptr = '\0';
         ptr++;
     }
+}
+
+void freeBag(BagOfWords* bag) {
+    for (size_t i = 0; i < bag->size; i++) {
+        bag->words[i].begin = NULL;
+        bag->words[i].end = NULL;
+    }
+
+    bag->size = 0;
 }

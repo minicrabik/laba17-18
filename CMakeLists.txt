@@ -11,6 +11,7 @@ add_library(str string/string_.c string/string_.h
         string/task/reverseWord.h
         string/task/replaceDigitToSpace.h
         string/task/replaceWordToWord.h
-        string/task/lexicographicalOrder.h)
+        string/task/lexicographicalOrder.h
+        string/task/printReversOrdered.h)
 
 target_link_libraries(laba17 str)
