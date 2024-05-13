@@ -1,11 +1,9 @@
-#include <stdio.h>
-#include "string/string.h"
+#include "string/task/removeNonLetters.h"
+
 
 int main() {
-    char *str = "12 3";
-    char result = findNonSpace(str);
+    test_1_remove_non_letters();
 
-    printf("Result: %c\n", result);
 
     return 0;
 }
