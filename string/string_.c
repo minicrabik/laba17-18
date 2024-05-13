@@ -107,3 +107,11 @@ void assert_string(const char* expected, char* got,
     } else
         fprintf(stderr, "%s - OK\n", func_name);
 }
+
+int getWord(char *beginSearch, WordDescriptor *word) {
+    word->begin = findNonSpace(beginSearch);
+    if (*word->begin == '\0')
+        return 0;
+    word->end = findSpace(word->begin);
+    return 1;
+}

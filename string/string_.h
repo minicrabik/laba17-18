@@ -12,6 +12,11 @@
 #define MAX_N_WORDS_IN_STRING 100
 #define MAX_STRING_SIZE 200
 
+typedef struct WordDescriptor {
+    char* begin;
+    char* end;
+} WordDescriptor;
+
 extern char _string_buffer[MAX_STRING_SIZE + 1];
 
 size_t strlen_(const char *begin);
@@ -39,5 +44,7 @@ char* getEndOfString(char* s)
 void assert_string(const char* expected, char* got,
                    char const* file_name, char const* func_name,
                    int line);
+
+int getWord(char *beginSearch, WordDescriptor *word);
 
 #endif //LABA17_STRING__H

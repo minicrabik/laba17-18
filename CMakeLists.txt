@@ -7,6 +7,7 @@ add_executable(laba17 main.c)
 
 add_library(str string/string_.c string/string_.h
         string/task/removeNonLetters
-        string/task/removeAdjacentEqualLetters.h)
+        string/task/removeAdjacentEqualLetters.h
+        string/task/reverseWord.h)
 
 target_link_libraries(laba17 str)
