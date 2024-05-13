@@ -6,6 +6,7 @@ set(CMAKE_C_STANDARD 11)
 add_executable(laba17 main.c)
 
 add_library(str string/string_.c string/string_.h
-        string/task/RemoweNonLetters)
+        string/task/removeNonLetters
+        string/task/removeAdjacentEqualLetters.h)
 
 target_link_libraries(laba17 str)
