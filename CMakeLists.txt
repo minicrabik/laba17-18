@@ -9,6 +9,7 @@ add_library(str string/string_.c string/string_.h
         string/task/removeNonLetters
         string/task/removeAdjacentEqualLetters.h
         string/task/reverseWord.h
-        string/task/replaceDigitToSpace.h)
+        string/task/replaceDigitToSpace.h
+        string/task/replaceWordToWord.h)
 
 target_link_libraries(laba17 str)
