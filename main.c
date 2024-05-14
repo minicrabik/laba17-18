@@ -12,6 +12,7 @@
 #include "string/task/findLastCommonWord.h"
 #include "string/task/findDuplicateWords .h"
 #include "string/task/findAnagramWords.h"
+#include "string/task/getWordExceptLast.h"
 
 int main() {
     test_1_remove_non_letters();
@@ -28,6 +29,7 @@ int main() {
     test_12_find_last_common_word();
     test_13_find_duplicate_words();
     test_14_find_anagram_words();
+    test_15_get_word_except_last();
 
     return 0;
 }

@@ -3,7 +3,8 @@ project(laba17 C)
 
 set(CMAKE_C_STANDARD 11)
 
-add_executable(laba17 main.c)
+add_executable(laba17 main.c
+        string/task/getWordExceptLast.h)
 
 add_library(str string/string_.c string/string_.h
         string/task/removeNonLetters
@@ -19,6 +20,7 @@ add_library(str string/string_.c string/string_.h
         string/task/getWordBeforeFirstWordWithA.h
         string/task/findLastCommonWord.h
         string/task/findDuplicateWords .h
-        string/task/findAnagramWords.h)
+        string/task/findAnagramWords.h
+        string/task/getWordExceptLast.h)
 
 target_link_libraries(laba17 str)
