@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <malloc.h>
 #include <ctype.h>
 #include "string_.h"
 
@@ -159,6 +160,47 @@ bool getWordReverse(char* r_begin, char* r_end, WordDescriptor * word) {
 
     word->begin = find_space_reverse(r_begin, r_end);
     word->begin = word->begin == r_end ? word->begin : word->begin + 1;
+
+    return true;
+}
+
+bool getWordWithoutSpace(char* begin_search, WordDescriptor * word) {
+    word->begin = findNonSpace(begin_search);
+    if (*word->begin == '\0')
+        return false;
+
+    word->end = findSpace(word->begin) - 1;
+
+    return true;
+}
+
+void wordDescriptorToString(WordDescriptor word, char* dest) {
+    if (word.begin == NULL && word.end == NULL)
+        return;
+
+    while (word.begin <= word.end) {
+        *dest = *word.begin;
+        word.begin++;
+        dest++;
+    }
+
+    *dest = '\0';
+}
+
+bool isWordEqual(const WordDescriptor word1, const WordDescriptor word2) {
+    char* begin1 = word1.begin;
+    char* begin2 = word2.begin;
+
+    while (begin1 < word1.end && begin2 < word2.end) {
+        if (*begin1 != *begin2)
+            return false;
+
+        begin1++;
+        begin2++;
+    }
+
+    if (word1.end - begin1 > 0 || word2.end - begin2 > 0)
+        return false;
 
     return true;
 }

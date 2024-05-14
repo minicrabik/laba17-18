@@ -63,4 +63,10 @@ bool isPalindromeWord(WordDescriptor * word);
 
 bool getWordReverse(char* r_begin, char* r_end, WordDescriptor * word);
 
+bool getWordWithoutSpace(char* begin_search, WordDescriptor * word);
+
+void wordDescriptorToString(WordDescriptor word, char* dest);
+
+bool isWordEqual(const WordDescriptor word1, const WordDescriptor word2);
+
 #endif //LABA17_STRING__H

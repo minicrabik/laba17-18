@@ -16,6 +16,7 @@ add_library(str string/string_.c string/string_.h
         string/task/counterPalindromeWords.h
         string/task/rearrangingWords.h
         string/task/changeWordOrdered.h
-        string/task/getWordBeforeFirstWordWithA.h)
+        string/task/getWordBeforeFirstWordWithA.h
+        string/task/findLastCommonWord.h)
 
 target_link_libraries(laba17 str)
