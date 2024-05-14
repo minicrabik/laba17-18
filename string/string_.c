@@ -150,3 +150,15 @@ bool isPalindromeWord(WordDescriptor * word) {
 
     return true;
 }
+
+bool getWordReverse(char* r_begin, char* r_end, WordDescriptor * word) {
+    if (word->begin == r_end)
+        return false;
+
+    word->end = findNonSpaceReverse(r_begin, r_end);
+
+    word->begin = find_space_reverse(r_begin, r_end);
+    word->begin = word->begin == r_end ? word->begin : word->begin + 1;
+
+    return true;
+}

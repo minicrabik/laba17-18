@@ -61,4 +61,6 @@ void free_bag(BagOfWords* bag);
 
 bool isPalindromeWord(WordDescriptor * word);
 
+bool getWordReverse(char* r_begin, char* r_end, WordDescriptor * word);
+
 #endif //LABA17_STRING__H
