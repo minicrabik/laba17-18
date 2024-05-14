@@ -6,6 +6,7 @@
 #include "string/task/lexicographicalOrder.h"
 #include "string/task/printReversOrdered.h"
 #include "string/task/counterPalindromeWords.h"
+#include "string/task/rearrangingWords.h"git
 
 int main() {
     test_1_remove_non_letters();
@@ -16,6 +17,7 @@ int main() {
     test_6_lexicographical_order();
     test_7_print_reverse_ordered();
     test_8_counter_palindrome_word;
+    test_9_rearranging_words();
 
     return 0;
 }
