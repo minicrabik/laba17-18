@@ -204,3 +204,13 @@ bool isWordEqual(const WordDescriptor word1, const WordDescriptor word2) {
 
     return true;
 }
+
+bool get_word_without_space(char* begin_search, WordDescriptor * word) {
+    word->begin = findNonSpace(begin_search);
+    if (*word->begin == '\0')
+        return false;
+
+    word->end = findSpace(word->begin) - 1;
+
+    return true;
+}

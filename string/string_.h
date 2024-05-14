@@ -69,4 +69,6 @@ void wordDescriptorToString(WordDescriptor word, char* dest);
 
 bool isWordEqual(const WordDescriptor word1, const WordDescriptor word2);
 
+bool get_word_without_space(char* begin_search, WordDescriptor * word);
+
 #endif //LABA17_STRING__H

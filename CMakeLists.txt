@@ -18,6 +18,7 @@ add_library(str string/string_.c string/string_.h
         string/task/changeWordOrdered.h
         string/task/getWordBeforeFirstWordWithA.h
         string/task/findLastCommonWord.h
-        string/task/findDuplicateWords .h)
+        string/task/findDuplicateWords .h
+        string/task/findAnagramWords.h)
 
 target_link_libraries(laba17 str)
