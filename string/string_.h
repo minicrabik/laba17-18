@@ -59,4 +59,6 @@ void freeString(char* string);
 
 void free_bag(BagOfWords* bag);
 
+bool isPalindromeWord(WordDescriptor * word);
+
 #endif //LABA17_STRING__H

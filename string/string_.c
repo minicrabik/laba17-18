@@ -135,3 +135,18 @@ void freeBag(BagOfWords* bag) {
 
     bag->size = 0;
 }
+
+bool isPalindromeWord(WordDescriptor * word) {
+    char* start = word->begin;
+    char* end = word->end - 1;
+
+    while (start < end) {
+        if (*start != *end)
+            return false;
+
+        start++;
+        end--;
+    }
+
+    return true;
+}
