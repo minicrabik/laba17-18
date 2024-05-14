@@ -8,6 +8,7 @@
 #include "string/task/counterPalindromeWords.h"
 #include "string/task/rearrangingWords.h"
 #include "string/task/changeWordOrdered.h"
+#include "string/task/getWordBeforeFirstWordWithA.h"
 
 int main() {
     test_1_remove_non_letters();
@@ -20,6 +21,8 @@ int main() {
     test_8_counter_palindrome_word();
     test_9_rearranging_words();
     test_10_change_word_order();
+    test_11_all_test_get_before_first_word_with_a();
+
 
     return 0;
 }
