@@ -15,6 +15,7 @@
 #include "string/task/getWordExceptLast.h"
 #include "string/task/findPrecedingWord.h"
 #include "string/task/removePalindromeWord.h"
+#include "string/task/balanceString .h"
 
 int main() {
     test_1_remove_non_letters();
@@ -34,6 +35,7 @@ int main() {
     test_15_get_word_except_last();
     test_16_find_preceding_word();
     test_17_remove_palindrome_word();
+    test_18_balance_string();
 
     return 0;
 }
