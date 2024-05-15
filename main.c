@@ -16,6 +16,7 @@
 #include "string/task/findPrecedingWord.h"
 #include "string/task/removePalindromeWord.h"
 #include "string/task/balanceString .h"
+#include "string/task/lettersBelongString.h"
 
 int main() {
     test_1_remove_non_letters();
@@ -36,6 +37,7 @@ int main() {
     test_16_find_preceding_word();
     test_17_remove_palindrome_word();
     test_18_balance_string();
+    test_19_letters_belong_string();
 
     return 0;
 }

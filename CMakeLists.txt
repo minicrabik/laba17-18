@@ -24,6 +24,7 @@ add_library(str string/string_.c string/string_.h
         string/task/getWordExceptLast.h
         string/task/findPrecedingWord.h
         string/task/removePalindromeWord.h
-        string/task/balanceString .h)
+        string/task/balanceString .h
+        string/task/lettersBelongString.h)
 
 target_link_libraries(laba17 str)
