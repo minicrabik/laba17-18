@@ -14,6 +14,7 @@
 #include "string/task/findAnagramWords.h"
 #include "string/task/getWordExceptLast.h"
 #include "string/task/findPrecedingWord.h"
+#include "string/task/removePalindromeWord.h"
 
 int main() {
     test_1_remove_non_letters();
@@ -32,6 +33,7 @@ int main() {
     test_14_find_anagram_words();
     test_15_get_word_except_last();
     test_16_find_preceding_word();
+    test_17_remove_palindrome_word();
 
     return 0;
 }

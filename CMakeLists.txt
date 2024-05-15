@@ -22,6 +22,7 @@ add_library(str string/string_.c string/string_.h
         string/task/findDuplicateWords .h
         string/task/findAnagramWords.h
         string/task/getWordExceptLast.h
-        string/task/findPrecedingWord.h)
+        string/task/findPrecedingWord.h
+        string/task/removePalindromeWord.h)
 
 target_link_libraries(laba17 str)
